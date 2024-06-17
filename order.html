@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <section class="container p-5">
+        <div class="row">
+            <a href="index.html">
+                <button class="btn btn-info">back to home</button>
+            </a>
+            <div class="col-12 col-lg-6 p-5">
+                <img class="w-100" src="images/machine.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6 Deliveryinfo">
+                <form action="#" onsubmit="return Order()">
+                    <div class="container">
+                        <h4>Delivery details</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="Firstname" name="" value=""/>
+                                <span class="text-danger" id="emptyfirstname"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="Lastname" name="" value=""/>
+                                <span class="text-danger" id="emptylastname"></span>
+                            </div>
+                        </div> <br>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <label for="" class="form-label">Email Id</label>
+                                <input type="email" class="form-control" id="emailid" value=""/>
+                                <span class="text-danger" id="emptyemail"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="number" value=""/>
+                                <span class="text-danger" id="emptynumber"></span>
+                            </div>
+                        </div>
+                        <div> <br>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <label for="" class="form-label">*State</label>
+                                <input type="text" class="form-control" id="State" value=""/>
+                                <span class="text-danger" id="emptystate"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="" class="form-label">*city</label>
+                                <input type="text" class="form-control" id="city" value="" />
+                                <span class="text-danger" id="emptycity"></span>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <label for="" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" value="" 
+                                placeholder="House No,Building Name(Required)"/>
+                                <span class="text-danger" id="emptyaddress"></span>
+                            </div>
+                            <div class="col-12">
+                                <br>
+                                <label for="" class="form-label">Land mark</label>
+                                <input type="text" class="form-control" id="landmark" placeholder="Road Name,Area,Colony(Required)" value=""/>
+                                <span class="text-danger" id="emptylandmark"></span>
+                            </div>
+                        </div> 
+                    </div> <br>
+                    <button class="px-5 rounded-1 bg-info py-2">Order Now</button>
+                </form>
+            </section>
+            </div>
+        </div>
+    </section>
+    <script src="order.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

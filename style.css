@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    h1,h4,h3{
+        font-weight:700!important;
+    }
+    p,h4,h5{
+        text-align: justify;
+    }
+    button{
+        border: none;
+    }
+}
+.card{
+    box-shadow: 2px 2px  gray;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer i{
+    margin-right: 20px;
+}
+.why{
+    height:fit-content;
+}
+.navbar img{
+    width: 100px;
+    height:40px;
+}
+.heropage{
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    position: fixed!important;
+    width: 100%;
+    z-index:1;
+}
+.comment_box input{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.comment_box textarea{
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+}
+.FAQ details{
+    background-color: rgb(9, 145, 176);
+    padding: 10px;
+    color:white;
+    margin-top: 10px;
+}
+@media(max-width:600px){
+    .card{
+        margin: 10px;
+    }
+    .about img{
+        display: none;
+    }
+    .FAQ{
+        padding: 10px;
+    }
+    .about img{
+        width: 100%;;
+    }
+}
+@media(min-width:700px){
+    .FAQ{
+        padding: 50px;
+    }
+    .maincontent{
+        padding: 50px;
+    }
+    .maincontent img{
+        padding: 70px;
+    }
+}
+@media only screen and (min-width:900px) and (max-width:999px){
+    .card{
+        height: 230px;
+    }
+    .maincontent img{
+        margin-top: 80px;
+    }
+    .why{
+        padding-left: 30px!important;
+        padding-right: 30px!important;
+    } 
+}
+@media (min-width:1000px){
+    .why{
+        padding-left: 80px!important;
+        padding-right: 80px!important;
+    }
+}
